@@ -5,6 +5,7 @@ type Filme = {
     diretor: string
     genero: string
     sinopse: string
+    review: string
 }
 
 type Props = {
