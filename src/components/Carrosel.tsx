@@ -1,6 +1,10 @@
 type Filme = {
     imagem: string
     titulo: string
+    ano: number
+    diretor: string
+    genero: string
+    sinopse: string
 }
 
 type Props = {
