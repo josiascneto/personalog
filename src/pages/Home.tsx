@@ -40,7 +40,12 @@ No fim acredito que Whiplash triunfa por ser sobre algo que qualquer um pode se 
             diretor: "Louis Garrel",
             genero: "Drama/Comédia",
             sinopse: "Marianne deixa Abel por Paul, seu melhor amigo e pai de seu filho ainda não nascido. Oito anos depois, Paul morre e Marianne retorna para Abel. No entanto, as coisas mudaram para ambos e sentimentos de ciúmes cercam o novo relacionamento.",
-            review: "legal"
+            review: `Não chamaria esse filme de perfeito ou uma grande referência, mas ele foi muito divertido de assistir e representa bem algo que me chama atenção no cinema francês. Claro que é um cinema extremamente diverso, mas existe aqui um certo padrão que já encontrei em outros filmes: o foco nas relações cotidianas e um humor mais seco, quase como se os próprios personagens não levassem totalmente a sério o que está acontecendo, o que acaba deixando tudo um pouco mais engraçado e até absurdo, justamente pela naturalidade das reações.
+A história aqui é simples, mas carrega aquele drama meio exagerado quase novelesco que para mim funciona como parte do humor. Não é um filme de grandes acontecimentos ou cenas cheias de ação, os momentos mais importantes são conversas entre os personagens, onde a situação e eles mesmo vão se revelando aos poucos. Descrevendo assim pode parecer algo lento ou até entediante, mas o filme nunca chega a esse ponto. Muito disso também se deve à sua duração curta, cerca de 75 minutos, que reforça essa sensação de algo mais episódico e direto. Essa escala menor funciona a favor do filme. Nem toda história precisa ser grandiosa ou extremamente complexa, e aqui tudo anda em sintonia com a proposta. É um filme leve de acompanhar, mas que ainda consegue deixar algo para pensar depois.
+O filme é protagonizado e dirigido por Louis Garrel, normalmente isso não me chama tanta atenção, mas aqui senti realmente como uma vantagem. Dá a impressão de que ele tem controle total sobre o tom da obra, sabendo exatamente o que quer e como transmitir. Como ator, ele entrega o necessário para sustentar o personagem, e como diretor, evita que o filme caia tanto em uma comédia romântica genérica quanto em um drama excessivamente melancólico.
+Mesmo gostando bastante do longa, ainda assim, não acho que o filme seja impecável para ser considerado um clássico. Mas, ao mesmo tempo, essa simplicidade é parte do seu charme. É uma obra “fácil” de assistir pela duração, mas não é vazia, lembra até um livro curto que, mesmo terminando rápido, continua na cabeça por um tempo.
+Para quem quer sair um pouco do cinema americano mais mainstream, é uma ótima recomendação. Não é um filme experimental ou difícil, mas já apresenta um estilo diferente do que costuma ser mais popular. Pode não agradar quem busca algo mais movimentado, mas para quem aceita esse tom mais mundano e o humor seco, é uma experiência bem interessante e, no pior dos casos, uma que passa rápido.
+`
         },
         {
             imagem: "https://a.ltrbxd.com/resized/film-poster/4/3/3/0/2/43302-up-0-2000-0-3000-crop.jpg?v=eac6a19a4c",
@@ -49,7 +54,12 @@ No fim acredito que Whiplash triunfa por ser sobre algo que qualquer um pode se 
             diretor: "Pete Docter",
             genero: "Aventura",
             sinopse: "Carl Fredricksen passou a vida inteira sonhando em explorar o mundo e viver a vida ao máximo. Mas, aos 78 anos, parece que a vida passou por ele até que uma reviravolta do destino (e um Escoteiro da Natureza de 8 anos chamado Russell) lhe dá uma nova chance de viver.",
-            review: "legal"
+            review: `Ok, tenho quase certeza que todo mundo gosta de Up e por bons motivos. Não é nenhum “hot take” dizer que esse filme é icônico em vários sentidos. História, música e personagens se encaixam muito bem para criar essa atmosfera tão memorável e agradável de assistir.
+Dessa lista, é de longe o filme que mais vi, seja por vontade própria ou pelas inúmeras reprises na TV aberta. Isso naturalmente criou um apego emocional, mas tentando ser justo, isso não chega a me cegar, de fato, nada aqui é particularmente inovador ou experimental (afinal, é um filme da Pixar) e alguns elementos podem até ser considerados clichês ou apelativos, ainda assim, tudo funciona muito bem. A sequência inicial da vida do Carl, por exemplo, parece feita cientificamente sob medida para emocionar, e mesmo sendo direta na intenção, nunca soa exagerada, o que somado com a trilha sonora, atinge exatamente o resultado que busca.
+A animação segue essa mesma lógica: não é algo que eu colocaria como o auge absoluto do gênero, mas é extremamente bem executada. O estilo visual é simples, direto e muito eficiente, não escolheria nada de diferente. É aquele tipo de qualidade consistente que marcou a Pixar por muito tempo. Os designs são claros e expressivos, fáceis de entender, mas ainda memoráveis e admiráveis por serem tão bem executados e eficientes. Se tem um ponto que se destaca um pouco mais, é a trilha sonora. Michael Giacchino entrega algo que ele já provou fazer muito bem: músicas que entram no momento certo, sem exagero a ponto de atrapalhar e sem medo de fazer parte, mas com impacto suficiente para marcar o filme. “Married Life” virou praticamente um símbolo, e com razão  é uma daquelas composições que ultrapassam o próprio filme e entram na cultura popular, virando basicamente um meme.
+Se eu fosse explicar Up seria como um prato extremamente popular, mas executado com excelência, o famoso feijão com arroz perfeito. Não tenta reinventar nada, mas faz tudo tão bem que se torna especial mesmo assim. É facilmente um dos filmes mais lembrados quando se fala em Pixar, e dificilmente vai envelhecer mal. Pelo contrário, revisitar em diferentes fases da vida só me fez apreciar ainda mais o filme e entender melhor seus momentos.
+Gostaria que a Pixar ainda produzisse filmes nesse nível com mais frequência (ultimamente tem sido bem desapontador). Mesmo assim, fico satisfeito com o impacto que esse longa teve em mim desde pequeno.
+`
         }
     ]
 
@@ -60,7 +70,12 @@ return (
         <Navhome />
         <div className="flex gap-10 items-start px-4 py-10">
             <div className="sticky top-10 flex gap-10 items-start">
-                <Carrosel filmes={filmes} setFilmeAtual={setFilmeAtual} />
+                {/* carrosel */}
+                <div className="flex flex-col items-center -mt-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={6} stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" /></svg>
+                    <Carrosel filmes={filmes} setFilmeAtual={setFilmeAtual} />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={6} stroke="currentColor" className="size-6"><path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+                </div>  
                 {/* ficha tecnica */}
                 <div className="max-w-md text-sm">
                     <h2 className="text-4xl font-bold mb-4 text-white italic">{filmes[filmeAtual].titulo}</h2>
