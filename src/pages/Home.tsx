@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Carrosel from "../components/Carrosel"
 import Navhome from "../components/Navhome"
+import Footer from "../components/Footer"
 
 function Home() {
     const filmes = [
@@ -79,10 +80,10 @@ return (
                 {/* ficha tecnica */}
                 <div className="max-w-md text-sm">
                     <h2 className="text-4xl font-bold mb-4 text-white italic">{filmes[filmeAtual].titulo}</h2>
-                    <p className="text-xl"><strong>Ano:</strong> {filmes[filmeAtual].ano}</p>
-                    <p className="text-xl"><strong>Diretor:</strong> {filmes[filmeAtual].diretor}</p>
-                    <p className="text-xl"><strong>Duração:</strong> {filmes[filmeAtual].genero}</p>
-                    <p className="w-60 text-justify mt-2 text-xl"><strong>Sinopse: </strong>{filmes[filmeAtual].sinopse}</p>
+                    <p className="text-xl text-white"><strong className="text-[oklch(90%_0.076_70.697)]">Ano:</strong> {filmes[filmeAtual].ano}</p>
+                    <p className="text-xl text-white"><strong className="text-[oklch(90%_0.076_70.697)]">Diretor:</strong> {filmes[filmeAtual].diretor}</p>
+                    <p className="text-xl text-white"><strong className="text-[oklch(90%_0.076_70.697)]">Duração:</strong> {filmes[filmeAtual].genero}</p>
+                    <p className="w-60 text-justify mt-2 text-xl text-white"><strong className="text-[oklch(90%_0.076_70.697)]">Sinopse: </strong>{filmes[filmeAtual].sinopse}</p>
                 </div>
             </div>
             {/* review */}
@@ -92,6 +93,9 @@ return (
                     <p>{filmes[filmeAtual].review}</p>
                 </div>
             </div>
+        </div>
+        <div>
+            <Footer />
         </div>
     </div>
         )
